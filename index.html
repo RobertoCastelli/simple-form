@@ -11,6 +11,10 @@
 		<div class="container">
 			<div class="content">
 				<h1>Simple Form</h1>
+				<div>vanilla JS</div>
+				<br />
+				<br />
+
 				<form>
 					<div class="info">
 						<input
@@ -18,6 +22,7 @@
 							name="firstname"
 							id="firstname"
 							placeholder="firstname"
+							value="John"
 							required
 						/>
 						<input
@@ -25,34 +30,69 @@
 							name="lastname"
 							id="lastname"
 							placeholder="lastname"
+							value="Doe"
 							required
 						/>
 					</div>
 					<div class="email-phone">
-						<input type="email" name="email" id="email" placeholder="email" />
-						<input type="number" name="phone" id="phone" placeholder="phone" />
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="email"
+							value="info@gmail.com"
+							required
+						/>
+						<input
+							type="number"
+							name="phone"
+							id="phone"
+							placeholder="phone"
+							value="123456789"
+							require
+						/>
 					</div>
 					<div class="date">
 						<label for="date">born:</label>
-						<input type="date" name="date" id="date" />
+						<input type="date" name="date" id="date" required />
 					</div>
 					<div class="sex">
 						<div class="male">
-							<input type="radio" name="radio" id="radio-male" />
+							<input
+								type="radio"
+								name="radio"
+								class="radio"
+								value="male"
+								checked
+								required
+							/>
 							<label for="radio">male</label>
 						</div>
 						<div class="female">
-							<input type="radio" name="radio" id="radio-female" />
+							<input
+								type="radio"
+								name="radio"
+								class="radio"
+								value="female"
+								required
+							/>
 							<label for="radio">female</label>
 						</div>
 					</div>
 					<div class="check">
-						<input type="checkbox" name="check" id="check" />
+						<input
+							type="checkbox"
+							name="check"
+							id="check"
+							value="Permission OK"
+							required
+						/>
 						<label for="check">I have read the privacy policy</label>
 					</div>
 
 					<button type="submit">submit</button>
 				</form>
+				<p class="result"></p>
 			</div>
 			<footer>
 				<p>copyright &copy; Roberto Castelli</p>
