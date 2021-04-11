@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Simple Form</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<h1>Simple Form</h1>
+				<form>
+					<div class="info">
+						<input
+							type="text"
+							name="firstname"
+							id="firstname"
+							placeholder="firstname"
+							required
+						/>
+						<input
+							type="text"
+							name="lastname"
+							id="lastname"
+							placeholder="lastname"
+							required
+						/>
+					</div>
+					<div class="email-phone">
+						<input type="email" name="email" id="email" placeholder="email" />
+						<input type="number" name="phone" id="phone" placeholder="phone" />
+					</div>
+					<div class="date">
+						<label for="date">born:</label>
+						<input type="date" name="date" id="date" />
+					</div>
+					<div class="sex">
+						<div class="male">
+							<input type="radio" name="radio" id="radio-male" />
+							<label for="radio">male</label>
+						</div>
+						<div class="female">
+							<input type="radio" name="radio" id="radio-female" />
+							<label for="radio">female</label>
+						</div>
+					</div>
+					<div class="check">
+						<input type="checkbox" name="check" id="check" />
+						<label for="check">I have read the privacy policy</label>
+					</div>
+
+					<button type="submit">submit</button>
+				</form>
+			</div>
+			<footer>
+				<p>copyright &copy; Roberto Castelli</p>
+			</footer>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
